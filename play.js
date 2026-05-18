@@ -3,7 +3,7 @@ let humanPlayer;
 let comPlayer;
 
 if (humanPlayer === "rock" && comPlayer === "scissors" || humanPlayer === "paper" && comPlayer === "rock" || humanPlayer === "scissor" && comPlayer === "paper"){
-console.log ("HumanPlayer win.");
+console.log ("HumanPlayer win.");}
   else {
   console.log("comPlayer win.");
 }
