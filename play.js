@@ -1,20 +1,10 @@
 
 let inputs= ['rock', 'paper', 'scissor'];
 let userInput = prompt("what is your choice? (rock,paper,scissors)");
-let humanPlayer = userInput;
-
-const randomItem = inputs[Math.floor(Math.random() * inputs.length)];
-
-let comPlayer=randomItem;
 
 
-
-
-
-
-
-
-
+const humanPlayer = userInput ? userInput.toLowerCase() : "";;
+const comPlayer = inputs[Math.floor(Math.random() * inputs.length)];
 
 
 if(!inputs.includes(humanPlayer))
@@ -22,11 +12,11 @@ if(!inputs.includes(humanPlayer))
 else if (humanPlayer === "rock" && comPlayer === "scissor" || humanPlayer === "paper" && comPlayer === "rock" || humanPlayer === "scissor" && comPlayer === "paper")
 {
 alert ("HumanPlayer win.");
-console.log("hum: ", humanPlayer , comPlayer)}
+console.log("hum: ", humanPlayer , "com: ", comPlayer)}
    else if (humanPlayer === comPlayer){
 alert ("Tie!!");
-   console.log("hum: ", humanPlayer, comPlayer); }
+   console.log("hum: ", humanPlayer, "com: ", comPlayer); }
   else {
   alert("comPlayer win.");
-  console.log("hum: ", humanPlayer, comPlayer);
+  console.log("hum: ", humanPlayer, "com: ", comPlayer);
 }
